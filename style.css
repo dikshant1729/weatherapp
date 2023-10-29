@@ -21,7 +21,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .search-bar{
     outline: 0;
@@ -95,4 +95,23 @@ p{
 }
 .weather{
     display: none;
+}
+
+@media (max-width: 450px){
+    .search{
+        display: block;
+        justify-content: center;
+    }
+
+    .col{
+        flex-direction: column;
+    }
+
+    .wind , .humidity{
+        margin-top: 5px;
+    }
+    .search input{
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
